@@ -31,7 +31,7 @@ namespace NumSum
         static void Main(string[] args)
         {
             Thread th1 = new Thread(new ParameterizedThreadStart(ReadNum));
-            th1.Start("C:/Users/Pavel/Desktop/sum.txt");
+            th1.Start("sum.txt");
             Thread th2 = new Thread(SumNum);
             th2.Start();
         }
